@@ -21,26 +21,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
       <Head>
-      <meta name="title" content="Sleep Deprived by M3" />
-      <meta name="description" content={description} />
+        <title>Sleep Deprived by M3</title>
+        <meta name="title" content="Sleep Deprived by M3" />
+        <meta name="description" content={description} />
 
-      {/* <!-- Open Graph / Facebook --> */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.sleepdeprived.shop/" />
-      <meta property="og:title" content="Sleep Deprived by M3" />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.sleepdeprived.shop/" />
+        <meta property="og:title" content="Sleep Deprived by M3" />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
 
-      {/* <!-- Twitter --> */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://www.sleepdeprived.shop/" />
-      <meta property="twitter:title" content="Sleep Deprived by M3" />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
-
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.sleepdeprived.shop/" />
+        <meta property="twitter:title" content="Sleep Deprived by M3" />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
       </Head>
+      <body className={inter.className}>
       <div className="flex w-full h-32 fixed z-40">
         <div className="w-1/3 h-1/2 bg-black rounded-b-md rounded-r-none z-40 text-white flex items-center px-4 pr-0 md:pr-4 gap-2">
           <MapPinIcon  className="w-6 h-6"/>
