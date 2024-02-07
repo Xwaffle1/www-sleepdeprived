@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.sleepdeprived.shop/",
     images: [
       {
-        url: "https://www.sleepdeprived.shop/all%20hats.jpg",
+        url: "https://www.sleepdeprived.shop/metadata.jpg",
         alt: "Sleep Deprived Hats",
       },
     ],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     images: {
-      url: "https://www.sleepdeprived.shop/all%20hats.jpg",
+      url: "https://www.sleepdeprived.shop/metadata.jpg",
       alt: "Sleep Deprived Hats",
     }
   },
