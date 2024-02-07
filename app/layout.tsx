@@ -7,12 +7,32 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Sleep Deprived by M3",
-  // description: "I'm tired a lot. I'm also okay at creating things. Thought this would look sick embroidered on stuff. So my wife bought me a machine. Buy my stuff, or steal my logo. I don't really care.",
-// };
-
+const title = "Sleep Deprived by M3";
 const description = "I'm tired a lot. I'm also okay at creating things. Thought this would look sick embroidered on stuff. So my wife bought me a machine. Buy my stuff, or steal my logo. I don't really care.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    url: "https://www.sleepdeprived.shop/",
+    images: [
+      {
+        url: "https://www.sleepdeprived.shop/all%20hats.jpg",
+        alt: "Sleep Deprived Hats",
+      },
+    ],
+  },
+  twitter: {
+    title: title,
+    description: description,
+    images: {
+      url: "https://www.sleepdeprived.shop/all%20hats.jpg",
+      alt: "Sleep Deprived Hats",
+    }
+  },
+};
 
 export default function RootLayout({
   children,
@@ -21,25 +41,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>Sleep Deprived by M3</title>
-        <meta name="title" content="Sleep Deprived by M3" />
-        <meta name="description" content={description} />
-
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.sleepdeprived.shop/" />
-        <meta property="og:title" content="Sleep Deprived by M3" />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
-
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.sleepdeprived.shop/" />
-        <meta property="twitter:title" content="Sleep Deprived by M3" />
-        <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content="https://www.sleepdeprived.shop/all%20hats.jpg" />
-      </Head>
       <body className={inter.className}>
       <div className="flex w-full h-32 fixed z-40">
         <div className="w-1/3 h-1/2 bg-black rounded-b-md rounded-r-none z-40 text-white flex items-center px-4 pr-0 md:pr-4 gap-2">
