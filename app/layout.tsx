@@ -8,7 +8,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 const title = "Sleep Deprived by M3";
-const description = "I'm tired a lot. I'm also okay at creating things. Thought this would look sick embroidered on stuff. So my wife bought me a machine. Buy my stuff, or steal my logo. I don't really care.";
+const description = "I'm tired a lot. This look sick embroidered on stuff. Buy my stuff, or steal my logo. I don't really care.";
 
 export const metadata: Metadata = {
   title: title,
