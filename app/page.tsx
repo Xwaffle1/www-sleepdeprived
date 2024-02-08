@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Carousel from "./Carousel";
 import SocialBar from "./SocialBar";
+import ClientPostHog from "./ClientPosthog";
 
-export default function Home() {
+export default function Home() {  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <ClientPostHog />
       <div className="w-full">
         <img src="/all hats.jpg" className="w-full h-screen object-cover" />
       </div>

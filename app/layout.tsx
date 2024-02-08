@@ -5,6 +5,8 @@ import Image from "next/image";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/16/solid";
 import Head from "next/head";
 import SocialBar from "./SocialBar";
+import { sendEvent } from "./Posthog";
+import ClientShopNow from "./ClientShopNow";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,9 +59,7 @@ export default function RootLayout({
           </div>
         </div>
         <div className="w-1/3 h-1/2 bg-black rounded-b-md border-b-2 border-red-500 rounded-l-none flex items-center justify-end px-4 z-100">
-          <a href="https://www.etsy.com/shop/IAmSleepDeprived?ref=sleepdeprived.app" className="bg-red-600 hover:bg-red-700 rounded-md p-2 text-white hover:text-gray-300 font-bold">
-            shop now
-          </a>
+          <ClientShopNow />
         </div>
       </div>
       <div className="w-full h-8">

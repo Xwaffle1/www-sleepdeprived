@@ -1,7 +1,6 @@
 "use client";
 
 import { Carousel } from "@material-tailwind/react";
-import type { CarouselProps } from "@material-tailwind/react";
 
 export default function ScrollingCarousel() {
   return (
