@@ -1,10 +1,11 @@
 import type { Config } from "tailwindcss";
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-const config: Config = {
+const config: Config = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}"
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -13,17 +14,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      backgroundColor: {
-
-      },
+      backgroundColor: {},
       height: {
-        '100': "30rem",
-        '110': "40rem",
-      },
+        "100": "30rem",
+        "110": "40rem",
+      }
     },
   },
-  plugins: [
-    require("daisyui"),
-  ],
-};
+  plugins: [],
+});
 export default config;
