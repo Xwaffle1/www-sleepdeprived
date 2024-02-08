@@ -69,7 +69,7 @@ export default function RootLayout({
       <footer className="flex items-center h-16 bg-black border-t-2 border-red-500 p-8 text-white">
           <SocialBar />
           <a href="https://chasem.dev" className="text-xs text-gray-500 flex-grow justify-end flex hover:text-gray-600">
-            Designed by Chase Myers
+            designed by chase myers
           </a>
         </footer>
       </body>

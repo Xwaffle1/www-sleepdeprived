@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <section className=" px-4">
         <h2 className="text-2xl font-bold text-center my-8">
-          Featured Products
+          featured products
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4">
           <a href="https://www.etsy.com/listing/1635913296/sleep-deprived-embroidered-t-shirt" className="flex flex-col items-center text-center group">
